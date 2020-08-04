@@ -388,7 +388,7 @@ body{
       }
   }
 
-  #gigasmurf{
+  #gigasmurf:hover{
     cursor: crosshair;
   }
 
