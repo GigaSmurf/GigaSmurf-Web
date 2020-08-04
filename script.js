@@ -35,3 +35,23 @@ const navSlide = () => {
    }
 
 window.onload = () => navSlide();
+
+function revealGigaSmurf(){
+    let server = location.href.lastIndexOf("/");
+    let loc = location.href.slice(0,server +1) + "yuumiawe.jpg";
+    let loc1 = location.href.slice(0,server +1) + "wick.jpg";
+    if (document.getElementById("gigasmurf").src == loc) 
+        {
+            document.getElementById("gigasmurf").src = "./wick.jpg";
+            document.getElementById("giganame").innerHTML = "Dylan Syahputra";
+            document.getElementById("gigadesc").innerHTML = "nalyd#1319 - Creator of GigaSmurf";
+        }
+        else 
+        {
+            document.getElementById("gigasmurf").src = "./yuumiawe.jpg";
+            document.getElementById("giganame").innerHTML = "GigaSmurf";
+            document.getElementById("gigadesc").innerHTML = "Multipurpose Discord Bot - Your Personal Sidekick";
+        }
+}
+
+
