@@ -224,9 +224,9 @@ body{
     text-align: center;
     color: white;
     margin-top: 100px;
-    text-transform: uppercase;
     transition: all 4s ease-in-out;
     background-color: #23272A;
+    font-style: 'Poppins', sans-serif;
   }
   .contact-title h1{
     font-size: 50px;
