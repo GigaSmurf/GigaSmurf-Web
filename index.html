@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>GigaSmurf</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+        <!-- Navigation -->
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a class="nav-link" href="#commands">Commands</a></li>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <div class="line1"></div>
+                <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+    <main>
+        <!-- Banner -->
+        <div class="box" id="home">
+            <img src="./yuumiawe.jpg" alt="Profile Pic" class="box-img">
+            <h1>GigaSmurf</h1>
+            <h5>
+            Multipurpose Discord Bot - Your Personal Sidekick</h5>
+            <p></p>
+           
+            <ul>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=729786914365767813&permissions=2080898161&scope=bot" target="_blank"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- Preview -->
+        <div class="row">
+            <div class="column">
+                <img src="./gigasmurf photos/teams.jpg" alt="Scrims">
+            </div>
+            <div class="column preview">
+                    <h1 >Scrims </h1>
+                    <p>The state of the art scrims manager allows for users to join and leave scrims with ease. In addition, a fair shuffling function (Fisher Yates Algorithm) evens up the teams if needed.  An online, cross-server, scrims system coming soon. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column special">
+                <img src="./gigasmurf photos/chess.jpg" src="Chess">
+            </div>
+
+            <div class="column special prev">
+                <h1>Chess</h1>
+                <p>Detailed information for 24+ chess openings which will allow you to never lose a game. A description, the pros and cons, and an animation of the opening moves are included. Hikaru would approve.</p>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="./gigasmurf photos/movie.jpg" src="Movie">
+            </div>
+            <div class="column preview">
+                <h1>Movie</h1>
+                <p>GigaSmurf provides a live database storage system for users to add/delete movies to the viewed/unviewed list and provides a movie poll to settle disputes between what movies to watch.</p>
+            </div>
+        </div>   
+          <div class="space"></div>   
+        <!-- Commands -->
+        <div id="commands">
+            <div class="prefix">
+                <!-- Prefix -->
+            <h3>Prefix <code>-</code></h3>
+            </div>
+            <table id="table">
+                <tbody>
+                <tr>
+                    <th>General</th>
+                </tr>
+                <tr>
+                    <td>hello</td>
+                    <td>Says hello to you</td>
+                </tr>
+                <tr>
+                    <td>ping</td>
+                    <td>Tests my speed</td>
+                </tr>
+                <tr>
+                    <td>poll <{time}m or {time}s> </td>
+                    <td>Creates a yes/no poll for {time} minutes or seconds</td>
+                </tr>
+                <tr>
+                    <td>timeout @username <{time}m or {time}s></td>
+                    <td>Puts a user in timeout for {time} minutes or seconds. *mute role needed</td>
+                </tr>
+                <tr>
+                    <td>weather {some place on earth}</td>
+                    <td>Displays the weather condition of a specified place</td>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Game</th>
+                </tr>
+                <tr>
+                    <td>lol {summoner name}</td>
+                    <td>Searches a LoL player</td>
+                </tr>
+                <tr>
+                    <td>scrims {game name}</td>
+                    <td>Initiates {game name} Scrims</td>
+                </tr>
+                <tr>
+                    <td>join</td>
+                    <td>Puts you into the scrims</td>
+                </tr>
+                <tr>
+                    <td>join @username</td>
+                    <td>Puts @username into the scrims</td>
+                </tr>
+                <tr>
+                    <td>remove</td>
+                    <td>Removes you from the scrims</td>
+                </tr>
+                <tr>
+                    <td>remove @username</td>
+                    <td>Removes @username from the scrims</td>
+                </tr>
+                <tr>
+                    <td>players</td>
+                    <td>Shows how many players are in the scrims</td>
+                </tr>
+                <tr>
+                    <td>teams</td>
+                    <td>Shows the scrims lineup</td>
+                </tr>
+                <tr>
+                    <td>shuffle</td>
+                    <td>Shuffles up the scrims lineup using the most fair shuffle algorithm, Fisher Yates.</td>
+                </tr>
+                <tr>
+                    <td>scrimsclear</td>
+                    <td>Resets the scrims</td>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Chess</th>
+                </tr>
+                <tr>
+                    <td>openinglist</td>
+                    <td>Shows the list of openings I have available</td>
+                </tr>
+                <tr>
+                    <td>opening {opening name/keywords}</td>
+                    <td>Shows the opening in detail</td>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Movie</th>
+                </tr>
+                <tr>
+                    <td>add {movie}</td>
+                    <td>Adds a movie to the unviewed list </td>
+                </tr>
+                <tr>
+                    <td>delete {movie}</td>
+                    <td>Deletes a movie from the unviewed list </td>
+                </tr>
+                <tr>
+                    <td>unviewed</td>
+                    <td>Displays the unviewed list</td>
+                </tr>
+                <tr>
+                    <td>viewed</td>
+                    <td>Displays the viewed list</td>
+                </tr>
+                <tr>
+                    <td>watch {movie}</td>
+                    <td>Moves the movie watched from the unviewed list to the viewed list</td>
+                </tr>
+                <tr>
+                    <td>viewdelete {movie}</td>
+                    <td>Deletes a movie from the viewed list</td>
+                </tr>
+                <tr>
+                    <td>moviepoll <{time}m or {time}s></td>
+                    <td>Creates a poll from the unviewed list (top 10) for a certain amount of time</td>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Info</th>
+                </tr>
+                <tr>
+                    <td>help</td>
+                    <td>Sends you a list of commands</td>
+                </tr>
+                <tr>
+                    <td>helphere</td>
+                    <td>Sends the channel a list of commands</td>
+                </tr>
+                <tr>
+                    <td>link</td>
+                    <td>Invite me to your server!</td>
+                </tr>
+                <tr>
+                    <td>website</td>
+                    <td>Sends a link to the GigaSmurf website</td>
+                </tr>
+               </tbody> 
+            </table>
+        </div>
+        <br>
+        <!-- Contact -->
+        <div id="contact">
+            <div class="contact-title">
+                <h1 style="overflow-wrap: break-word;">Contact GigaSmurf!</h1> 
+                <p>Feel free to give any tips or advice.</p>
+              </div>
+              <div class="contact-form">
+                <form id="contact-form" method="POST" action="https://formspree.io/mjvalovd" autocomplete="off">
+                  <input name = "name" type="text" class= "form-control" placeholder="Name" autocomplete="off" required><br>
+                  <input name = "email" type="email" class= "form-control" placeholder="Email" autocomplete="off" required><br>
+                  <input name = "subject" type="text" class= "form-control" placeholder="Subject" autocomplete="off" required><br>
+                  <textarea name="message" class="form-control" placeholder="Message" rows="4" autocomplete="off" required></textarea><br>
+        
+                  <input type="submit" class="form-control submit" value="SEND MESSAGE"> 
+                </form>
+              </div>
+        </div>
+        <!-- Footer -->
+        <footer class="copyright">
+            <p>*Credits to Riot Games, Inc. for the GigaSmurf photo.</p>
+        </footer>
+    </main>
+    </body>
+</html>
