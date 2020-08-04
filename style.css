@@ -226,13 +226,14 @@ body{
     margin-top: 100px;
     transition: all 4s ease-in-out;
     background-color: #23272A;
-    font-style: 'Poppins', sans-serif;
+
   }
   .contact-title h1{
     font-size: 50px;
     line-height: 10px;
     margin-bottom: 30px;
     text-align: center;
+    font-family: var(--main-font-family);
   }
   .contact-form {
     text-align: center;
