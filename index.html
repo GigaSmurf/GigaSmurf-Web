@@ -53,7 +53,7 @@
             </div>
             <div class="column preview">
                     <h1 >Scrims </h1>
-                    <p>The state of the art scrims manager allows for users to join and leave scrims with ease. In addition, a fair shuffling function (Fisher Yates Algorithm) evens up the teams if needed.  An online, cross-server, scrims system coming soon. </p>
+                    <p>The state of the art scrims manager allows for users to join and leave scrims with ease. In addition, a fair shuffling function (Fisher Yates Algorithm) evens up the teams if needed.  An online, cross-server, scrims system is out now! </p>
             </div>
         </div>
         <div class="row">
@@ -87,6 +87,10 @@
                 <tbody>
                 <tr>
                     <th>General</th>
+                </tr>
+                <tr>
+                    <td>prefix</td>
+                    <td>Creates a new prefix for this server (resets on maintenance)</td>
                 </tr>
                 <tr>
                     <td>hello</td>
@@ -153,6 +157,32 @@
                 <tr>
                     <td>scrimsclear</td>
                     <td>Resets the scrims</td>
+                </tr>
+                <tr>
+                    <td>win {team #(1 or 2)}</td>
+                    <td>Gives the win to the winning team and gives them elo</td>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Cross-Server</th>
+                </tr>
+                <tr>
+                    <td>create {match roomname}</td>
+                    <td>Creates an online scrims match</td>
+                </tr>
+                <tr>
+                    <td>match {@username1 @username2...list of players} {match roomname}</td>
+                    <td>Adds the team to the scrims match</td>
+                </tr>
+                <tr>
+                    <td>show {match roomname}</td>
+                    <td>Shows the scrims match teams for a specified match</td>
+                </tr>
+                <tr>
+                    <td>win {team #(1 or 2)} {match roomname}</td>
+                    <td>Gives elo to the winning team and closes the match room</td>
                 </tr>
                 <tr>
                     <th></th>
