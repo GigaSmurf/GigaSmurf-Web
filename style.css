@@ -343,6 +343,16 @@ body{
     margin-top: 15%;
   }
 
+  .prev1{
+    width: 30%;
+    height: 100%;
+    margin-top: 9%;
+  }
+  .special1{
+    float: right;
+    margin-top: 3.5%;
+  }
+
   .space{
     height: 150px;
   }
