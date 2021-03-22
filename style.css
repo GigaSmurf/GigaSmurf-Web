@@ -353,6 +353,11 @@ body{
     margin-top: 3.5%;
   }
 
+  .special1 img{
+    /* width: 610px; */
+    width: 50%;
+  }
+
   .space{
     height: 150px;
   }
@@ -398,6 +403,53 @@ body{
         margin-top: 7%;
       }
   }
+
+  @media only screen and (min-width: 428px) and (max-width: 767px){
+    .row:after{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .column{
+      width: 100%;
+    }
+    .contact-title h1{
+      font-size: 20px;
+    }
+    a.nav-link{
+      font-size: 15px;
+    }
+    .column img{
+      width: 100%;
+    }
+    .prev{
+      margin-top: 7%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
+    .row:after{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .column{
+      width: 100%;
+    }
+    .contact-title h1{
+      font-size: 20px;
+    }
+    a.nav-link{
+      font-size: 15px;
+    }
+    .column img{
+      width: 100%;
+    }
+    .prev{
+      margin-top: 7%;
+    }
+  }
+
 
   #gigasmurf:hover{
     cursor: crosshair;
