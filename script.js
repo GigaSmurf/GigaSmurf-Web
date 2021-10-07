@@ -54,4 +54,18 @@ function revealGigaSmurf(){
         }
 }
 
+function change(e){
+    var elem = document.getElementById("lolbutton");
+    if (elem.value=="More LoL commands") {
+        elem.innerHTML = "FF 15";
+        elem.value = "FF 15";
+
+        document.getElementById('idShowMe').style.display = 'block'
+    }
+    else {
+        elem.innerHTML = "More LoL commands";
+        elem.value = 'More LoL commands'
+        document.getElementById('idShowMe').style.display = 'none'
+    }
+}
 

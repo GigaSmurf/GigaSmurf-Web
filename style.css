@@ -327,6 +327,7 @@ body{
     content: "";
     display: table;
     clear: both;
+    height: 150px;
   }
 
   .column{
@@ -378,7 +379,7 @@ body{
   }
   .column p{
     color: #969899;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   @media screen and (max-width: 600px){
@@ -449,11 +450,40 @@ body{
       margin-top: 7%;
     }
   }
+  @media only screen and (max-width: 1200px){
+    .column img{
+      width: 75%;
+    }
+  }
 
 
   #gigasmurf:hover{
     cursor: crosshair;
   }
+
+  .buttonchange{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4381FF;
+    color: rgba(255, 255, 255, 0.829);
+    background-image: linear-gradient(#155ceb, #4381FF, #155ceb);
+    font-weight: bold;
+    padding: 14px 28px;
+    font-size: 16px;
+   
+    text-align: center;
+  }
+  .space2{
+    height: 75px;
+  }
+
+   .buttonchange:hover{
+     cursor: crosshair;
+    background-image: linear-gradient(#274f9e,#274f9e, #274f9e);
+  }
+
+
 
 
   
