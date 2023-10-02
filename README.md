@@ -1,2 +1,2 @@
 # GigaSmurf Web
- zooooooooooomies
+ Website for GigaSmurf bot
